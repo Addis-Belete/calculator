@@ -1,5 +1,3 @@
-/* eslint-disable class-methods-use-this */
-
 import React from 'react';
 import Button from './Button';
 
@@ -10,7 +8,7 @@ class ButtonPannel extends React.Component {
     this.state = {};
   }
 
-  renderButton(i) {
+  static renderButton(i) {
     return <Button name={i} />;
   }
 
@@ -18,33 +16,33 @@ class ButtonPannel extends React.Component {
     return (
       <div className="board">
         <div className="board-row">
-          {this.renderButton('AC')}
-          {this.renderButton('+/-')}
-          {this.renderButton('%')}
-          {this.renderButton('/')}
+          {ButtonPannel.renderButton('AC')}
+          {ButtonPannel.renderButton('+/-')}
+          {ButtonPannel.renderButton('%')}
+          {ButtonPannel.renderButton('/')}
         </div>
         <div className="board-row">
-          {this.renderButton('7')}
-          {this.renderButton('8')}
-          {this.renderButton('9')}
-          {this.renderButton('X')}
+          {ButtonPannel.renderButton('7')}
+          {ButtonPannel.renderButton('8')}
+          {ButtonPannel.renderButton('9')}
+          {ButtonPannel.renderButton('X')}
         </div>
         <div className="board-row">
-          {this.renderButton('4')}
-          {this.renderButton('5')}
-          {this.renderButton('6')}
-          {this.renderButton('-')}
+          {ButtonPannel.renderButton('4')}
+          {ButtonPannel.renderButton('5')}
+          {ButtonPannel.renderButton('6')}
+          {ButtonPannel.renderButton('-')}
         </div>
         <div className="board-row">
-          {this.renderButton('1')}
-          {this.renderButton('2')}
-          {this.renderButton('3')}
-          {this.renderButton('+')}
+          {ButtonPannel.renderButton('1')}
+          {ButtonPannel.renderButton('2')}
+          {ButtonPannel.renderButton('3')}
+          {ButtonPannel.renderButton('+')}
         </div>
         <div className="board-row">
-          {this.renderButton('0')}
-          {this.renderButton('.')}
-          {this.renderButton('=')}
+          {ButtonPannel.renderButton('0')}
+          {ButtonPannel.renderButton('.')}
+          {ButtonPannel.renderButton('=')}
 
         </div>
 
