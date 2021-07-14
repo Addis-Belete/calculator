@@ -1,13 +1,15 @@
-/* eslint-disable react/destructuring-assignment */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => (
-  <button type="button" className="square">
-    {props.name}
-  </button>
-);
+const Button = (props) => {
+  const { name } = props;
+  return (
+
+    <button type="button" className="square">
+      {name}
+    </button>
+  );
+};
 
 Button.propTypes = {
 

@@ -1,4 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -9,10 +8,11 @@ class Display extends React.Component {
   }
 
   render() {
+    const { value } = this.props;
     return (
       <div className="display-result">
 
-        {this.props.value}
+        {value}
       </div>
 
     );
