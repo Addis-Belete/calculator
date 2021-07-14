@@ -1,4 +1,6 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Display extends React.Component {
   constructor(props) {
@@ -8,7 +10,10 @@ class Display extends React.Component {
 
   render() {
     return (
-      <div className="display-result" />
+      <div className="display-result">
+
+        {this.props.value}
+      </div>
 
     );
   }
@@ -16,6 +21,10 @@ class Display extends React.Component {
 
 Display.defaultProps = {
   value: '0',
+};
+Display.propTypes = {
+  value: PropTypes.string,
+
 };
 
 export default Display;
