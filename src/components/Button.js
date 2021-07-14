@@ -1,6 +1,4 @@
-/* eslint-disable react/require-default-props */
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -13,6 +11,6 @@ const Button = (props) => (
 
 Button.propTypes = {
 
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 export default Button;
