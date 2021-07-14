@@ -7,8 +7,6 @@ class Display extends React.Component {
   }
 
   render() {
-    // eslint-disable-next-line no-undef
-
     return (
       <div className="display-result" />
 
@@ -17,6 +15,7 @@ class Display extends React.Component {
 }
 
 Display.defaultProps = {
-  value: 0,
+  value: '0',
 };
+
 export default Display;
