@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import operate from './operate';
 
 const calculate = (data, buttonName) => {
@@ -42,6 +41,24 @@ const calculate = (data, buttonName) => {
       next += buttonName;
     }
   }
+  if (['+', '-', '*', '+'].includes(buttonName)) {
+    if (!total) {
+      total = '0';
+    }
+    if (total && !next) {
+      operation = buttonName;
+    }
+    if (total && next && operation) {
+      total = operate(total, next, operation);
+      next = null;
+      operation = buttonName;
+    }
+  }
+  if (buttonName === '%') {
+    total *= 0.01;
+    next *= 0.01;
+  }
+  return { total, next, operation };
 };
 
 export default calculate;
