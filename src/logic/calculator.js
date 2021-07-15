@@ -29,6 +29,19 @@ const calculate = (data, buttonName) => {
       next = '0.';
     }
   }
+  if ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].includes(buttonName)) {
+    if (operation === null) {
+      if (total === null) {
+        total = buttonName;
+      } else if (typeof total === 'number') {
+        total = buttonName;
+      } else {
+        total += buttonName;
+      }
+    } else {
+      next += buttonName;
+    }
+  }
 };
 
 export default calculate;
