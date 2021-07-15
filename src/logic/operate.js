@@ -13,6 +13,8 @@ const operate = (numberOne, numberTwo, operation) => {
     result = num1.times(num2);
   } else if (operation === '/') {
     result = num1.div(num2);
+  } else if (operation === '%') {
+    result = num1.div(100);
   }
   return result;
 };
