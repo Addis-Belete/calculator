@@ -15,6 +15,20 @@ const calculate = (data, buttonName) => {
     next = null;
     operation = null;
   }
+  if (buttonName === '.') {
+    if (!total) {
+      total = '0.';
+    }
+    if (total && operation) {
+      total += '.';
+    }
+    if (total && next && operation) {
+      next += '.';
+    }
+    if (total && operation && !next) {
+      next = '0.';
+    }
+  }
 };
 
 export default calculate;
