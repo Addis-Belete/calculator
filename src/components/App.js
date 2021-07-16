@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/no-unused-state */
 
@@ -17,8 +18,8 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(buttonName, data) {
-    const calculation = calculate(buttonName, data);
+  handleClick(buttonName) {
+    const calculation = calculate(buttonName);
     this.setState({
       total: calculation.total,
       next: calculation.next,
@@ -27,11 +28,11 @@ class App extends React.Component {
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next } = this.state;
     return (
       <>
-        <Display value={total} />
-        <ButtonPannel />
+        <Display value={total || next} />
+        <ButtonPannel clickHandler={(e) => this.handleClick(e.target.value)} />
       </>
     );
   }
