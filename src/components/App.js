@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 /* eslint-disable react/no-unused-state */
 
 import React from 'react';
@@ -18,6 +19,11 @@ class App extends React.Component {
 
   handleClick(buttonName) {
     const calculation = calculate(buttonName, data);
+    this.setState({
+      total: calculation.total,
+      next: calculation.next,
+      operation: calculation.operation,
+    });
   }
 
   render() {
