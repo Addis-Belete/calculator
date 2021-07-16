@@ -17,7 +17,7 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(buttonName) {
+  handleClick(buttonName, data) {
     const calculation = calculate(buttonName, data);
     this.setState({
       total: calculation.total,
@@ -27,9 +27,10 @@ class App extends React.Component {
   }
 
   render() {
+    const { total } = this.state;
     return (
       <>
-        <Display />
+        <Display value={total} />
         <ButtonPannel />
       </>
     );
