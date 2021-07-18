@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class Display extends React.Component {
   constructor(props) {
@@ -8,23 +8,16 @@ class Display extends React.Component {
   }
 
   render() {
-    const { value } = this.props;
+    const { calculation } = this.props;
     return (
       <div className="display-result">
 
-        {value}
+        <input id="result" defaultValue={calculation} />
+
       </div>
 
     );
   }
 }
-
-Display.defaultProps = {
-  value: '0',
-};
-Display.propTypes = {
-  value: PropTypes.string,
-
-};
 
 export default Display;
