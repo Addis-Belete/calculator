@@ -4,13 +4,12 @@
   height: 80px;
   margin-left: auto;
   margin-right: auto;
-  
 }
-#result{
- width: 294px;
+
+#result {
+  width: 294px;
   height: 76px;
-border: 1px solid gray;
- 
+  border: 1px solid gray;
 }
 
 .board {
