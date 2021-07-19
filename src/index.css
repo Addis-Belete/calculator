@@ -4,8 +4,12 @@
   height: 80px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#result {
+  width: 294px;
+  height: 76px;
   border: 1px solid gray;
-  border-radius: 2px;
 }
 
 .board {

@@ -2,7 +2,7 @@
 
 # Calculator
 
->
+> Is a simple basic calculator built with React.
 
 ![screenshot](./Asset/calc.png)
 

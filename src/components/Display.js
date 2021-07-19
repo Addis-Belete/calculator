@@ -8,22 +8,22 @@ class Display extends React.Component {
   }
 
   render() {
-    const { value } = this.props;
+    const { calculation } = this.props;
     return (
       <div className="display-result">
 
-        {value}
+        <input id="result" defaultValue={calculation} />
+
       </div>
 
     );
   }
 }
-
 Display.defaultProps = {
-  value: '0',
+  calculation: '0',
 };
 Display.propTypes = {
-  value: PropTypes.string,
+  calculation: PropTypes.string,
 
 };
 

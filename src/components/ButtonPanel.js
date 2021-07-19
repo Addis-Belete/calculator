@@ -1,48 +1,52 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 class ButtonPannel extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
-  }
+    this.state = {
 
-  static renderButton(i) {
-    return <Button name={i} />;
+    };
   }
 
   render() {
+    const { clickHandler } = this.props;
     return (
       <div className="board">
         <div className="board-row">
-          {ButtonPannel.renderButton('AC')}
-          {ButtonPannel.renderButton('+/-')}
-          {ButtonPannel.renderButton('%')}
-          {ButtonPannel.renderButton('/')}
+          <Button name="AC" handleClick={clickHandler} />
+          <Button name="+/-" handleClick={clickHandler} />
+          <Button name="%" handleClick={clickHandler} />
+          <Button name="÷" handleClick={clickHandler} />
+
         </div>
         <div className="board-row">
-          {ButtonPannel.renderButton('7')}
-          {ButtonPannel.renderButton('8')}
-          {ButtonPannel.renderButton('9')}
-          {ButtonPannel.renderButton('X')}
+          <Button name="7" handleClick={clickHandler} />
+          <Button name="8" handleClick={clickHandler} />
+          <Button name="9" handleClick={clickHandler} />
+          <Button name="X" handleClick={clickHandler} />
+
         </div>
         <div className="board-row">
-          {ButtonPannel.renderButton('4')}
-          {ButtonPannel.renderButton('5')}
-          {ButtonPannel.renderButton('6')}
-          {ButtonPannel.renderButton('-')}
+          <Button name="4" handleClick={clickHandler} />
+          <Button name="5" handleClick={clickHandler} />
+          <Button name="6" handleClick={clickHandler} />
+          <Button name="-" handleClick={clickHandler} />
+
         </div>
         <div className="board-row">
-          {ButtonPannel.renderButton('1')}
-          {ButtonPannel.renderButton('2')}
-          {ButtonPannel.renderButton('3')}
-          {ButtonPannel.renderButton('+')}
+          <Button name="1" handleClick={clickHandler} />
+          <Button name="2" handleClick={clickHandler} />
+          <Button name="3" handleClick={clickHandler} />
+          <Button name="+" handleClick={clickHandler} />
+
         </div>
         <div className="board-row">
-          {ButtonPannel.renderButton('0')}
-          {ButtonPannel.renderButton('.')}
-          {ButtonPannel.renderButton('=')}
+          <Button name="0" handleClick={clickHandler} />
+          <Button name="." handleClick={clickHandler} />
+          <Button name="=" handleClick={clickHandler} />
 
         </div>
 
@@ -51,4 +55,9 @@ class ButtonPannel extends React.Component {
     );
   }
 }
+
+ButtonPannel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+
+};
 export default ButtonPannel;
