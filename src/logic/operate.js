@@ -1,13 +1,7 @@
+/* eslint-disable no-console */
 /* eslint-disable no-param-reassign */
 import Big from 'big.js';
 
-const notZero = (n) => {
-  n = +n; // Coerce to number.
-  if (!n) { // Matches +0, -0, NaN
-    throw new Error(`Invalid dividend ${n}`);
-  }
-  return n;
-};
 const operate = (numberOne, numberTwo, operation) => {
   let result = ' ';
   const num1 = new Big(numberOne);
@@ -20,7 +14,7 @@ const operate = (numberOne, numberTwo, operation) => {
   } else if (operation === 'X') {
     result = num1.times(num2);
   } else if (operation === '÷') {
-    result = num1.div(notZero(num2));
+    result = num1 / num2;
   } else if (operation === '%') {
     result = num1.div(100);
   }
