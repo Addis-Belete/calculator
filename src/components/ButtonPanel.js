@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 class ButtonPannel extends React.Component {
@@ -55,4 +55,9 @@ class ButtonPannel extends React.Component {
     );
   }
 }
+
+ButtonPannel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+
+};
 export default ButtonPannel;
