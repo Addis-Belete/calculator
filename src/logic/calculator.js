@@ -3,7 +3,7 @@ import operate from './operate';
 const calculate = (buttonName, dataObj) => {
   let { total, next, operation } = dataObj;
   if (buttonName === '+/-') {
-    total = `${total * -1}`;
+    total *= -1;
     next *= -1;
   }
   if (buttonName === 'AC') {
@@ -46,7 +46,7 @@ const calculate = (buttonName, dataObj) => {
     }
   }
   if (buttonName === '%') {
-    total = (total * 0.01).toString();
+    total *= 0.01;
     next *= 0.01;
   }
   if (['+', '-', 'X', '÷'].includes(buttonName)) {
