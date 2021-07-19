@@ -49,7 +49,7 @@ const calculate = (buttonName, dataObj) => {
     total *= 0.01;
     next *= 0.01;
   }
-  if (['+', '-', '*', '÷'].includes(buttonName)) {
+  if (['+', '-', 'X', '÷'].includes(buttonName)) {
     if (!total) {
       total = '0';
     }

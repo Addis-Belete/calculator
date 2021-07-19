@@ -26,7 +26,7 @@ class ButtonPannel extends React.Component {
           <Button name="7" handleClick={clickHandler} />
           <Button name="8" handleClick={clickHandler} />
           <Button name="9" handleClick={clickHandler} />
-          <Button name="*" handleClick={clickHandler} />
+          <Button name="X" handleClick={clickHandler} />
 
         </div>
         <div className="board-row">
