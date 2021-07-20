@@ -4,7 +4,7 @@ import React from 'react';
 const Display = ({ calculation }) => (
   <div className="display-result">
 
-    <input id="result" defaultValue={calculation} />
+    <input id="result" defaultValue={calculation} placeholder="0" dir="rtl" />
 
   </div>
 
