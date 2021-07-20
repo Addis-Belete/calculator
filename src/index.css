@@ -1,26 +1,55 @@
 
-.display-result {
-  width: 300px;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
+.display-result{
+width: 700px;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 #result {
-  width: 294px;
-  height: 76px;
-  border: 1px solid gray;
+  width: 700px;
+  height: 100px;
+  border: none;
+background-color: #858693;
+box-sizing: border-box;
+font-size: 40px;
+font-weight: bold;
+color:#FFFFFF;
+
+
+}
+::placeholder{
+color:#FFFFFF;
+opacity: 1;
+font-size: 40px;
+font-weight: Bold;
+
 }
 
 .board {
-  width: 300px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
+
+
 }
 
 button {
+
   width: 25%;
-  height: 50px;
+  height: 100px;
   border-radius: 0;
   border: 1px solid gray;
+
+font-size: 30px;
+
 }
+.zeros{
+width: 50%;
+
+}
+
+.ornge{
+background-color:#F4913E;
+}
+
