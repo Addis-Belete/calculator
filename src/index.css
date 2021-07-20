@@ -79,3 +79,40 @@ margin-left: 10px;
 
 }
 
+h2{
+width:90%;
+margin: 0 5%;
+
+}
+
+P{
+
+width: 90%;
+margin: 2% 5%;
+font-size: 20px;
+
+}
+.qoute{
+width: 80%;
+margin: 15% 10%;
+font-size: 25px;
+
+}
+.app{
+display: flex;
+justify-content: space-between;
+
+}
+
+.calc{
+margin-right:5% ;
+}
+.lets{
+margin-left: 5%;
+}
+@media screen and (max-width: 700px) {
+	.lets{
+display: none;
+}
+}
+
