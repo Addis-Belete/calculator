@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import operate from '../../logic/operate';
 
 describe('Operation', () => {
