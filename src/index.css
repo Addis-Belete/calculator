@@ -104,7 +104,7 @@ p {
 font-size: 20px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .lets {
     display: none;
   }

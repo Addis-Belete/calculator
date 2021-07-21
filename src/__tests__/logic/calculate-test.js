@@ -49,7 +49,7 @@ describe('calculate methods', () => {
     expect(result.operation).toEqual(null);
   });
   it('should return a result of multiplication', () => {
-    const result = calculate('=', { total: '2', next: '0', operation: '*' });
+    const result = calculate('=', { total: '2', next: '0', operation: 'X' });
     expect(result.total * 1).toEqual(0);
     expect(result.next).toEqual(null);
     expect(result.operation).toEqual(null);
