@@ -23,6 +23,11 @@ To set up a local copy of the project
 - `cd calculator`
 - `Run npm start`
 
+To test the code
+
+- `Run npm test`
+- `Enter 'a' to see all tests `
+
 ## Author
 
 👤 **Addis Belete**
