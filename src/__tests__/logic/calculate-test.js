@@ -54,4 +54,15 @@ describe('calculate methods', () => {
     expect(result.next).toEqual(null);
     expect(result.operation).toEqual(null);
   });
+  it('Adding positive number is not zero', () => {
+    const result = calculate('=', { total: '2', next: '2', operation: '+' });
+    expect(result.total * 1).not.toBe(0);
+    expect(result.next).not.toBe(0);
+    expect(result.operation).not.toBe('+');
+  });
+  it('Multiplying positive number is not zero', () => {
+    const result = calculate('=', { total: '2', next: '2', operation: 'X' });
+    const value = result.total * 1;
+    expect(value).not.toEqual(0);
+  });
 });
