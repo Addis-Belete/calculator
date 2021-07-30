@@ -8,8 +8,13 @@
 
 ## Built With
 
+- Node.js
 - React
-- CSS3
+- React-DOM
+- React-Create-App
+- npm
+- CSS
+- ES6
 
 ## Live Demo
 
