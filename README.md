@@ -24,7 +24,7 @@
 
 To set up a local copy of the project
 
-- `git@github.com:Addis0943/calculator.git`
+- `git clone git@github.com:Addis0943/calculator.git`
 - `cd calculator`
 - `Run npm start`
 
