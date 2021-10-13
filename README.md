@@ -12,8 +12,8 @@
 - React JS
 - React-DOM
 - React-Create-App
-- npm
-- CSS
+- NPM
+- CSS3
 - ES6
 
 ## Live Demo
